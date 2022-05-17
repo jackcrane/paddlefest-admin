@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     const ws = new WebSocket(
-      "ws://paddlefestbackend.jackcrane.rocks/dash/watch"
+      "wss://paddlefestbackend.jackcrane.rocks/dash/watch"
       // "ws://localhost:3001/dash/watch"
       // "ws://seven-wasps-throw-74-215-156-75.loca.lt/dash/watch"
     );
