@@ -62,7 +62,10 @@ const Home = () => {
 
   useEffect(() => {
     setInterval(async () => {
-      let f = await fetch("http://localhost:3001/all-points");
+      // let f = await fetch("http://localhost:3001/all-points");
+      let f = await fetch(
+        "https://paddlefestbackend.jackcrane.rocks/all-points"
+      );
       if (f.status === 200) {
         setLocations(await f.json());
       }

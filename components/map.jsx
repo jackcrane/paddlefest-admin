@@ -16,7 +16,7 @@ export function MyMap({ points }) {
       )
     ) {
       let f = await fetch(
-        "http://localhost:3001/send-notification/individual",
+        "https://paddlefestbackend.jackcrane.rocks/send-notification/individual",
         {
           method: "POST",
           body: {
